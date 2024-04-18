@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules index.js"
+    "start": "node -r dotenv/config --experimental-json-modules index.js"
   },
   "author": "karan kumar",
   "license": "ISC",
