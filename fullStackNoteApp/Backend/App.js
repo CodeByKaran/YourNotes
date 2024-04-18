@@ -17,5 +17,7 @@ app.use(express.static("public"))
 import userRouter from "./src/routes/user.routes.js"
 import noteRouter from "./src/routes/notes.routes.js"
 
+console.log("hello run hua")
+
 app.use("/api/v1/users",userRouter)
 app.use("/api/v1/logged/note",noteRouter)
