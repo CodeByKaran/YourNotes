@@ -292,6 +292,7 @@ const resetPassswordSendOtp=async(req,res)=>{
     )
 
   } catch (error) {
+    console.log(error)
     return res
     .status(500)
     .send(new ApiError(500,"something went wrong"))
