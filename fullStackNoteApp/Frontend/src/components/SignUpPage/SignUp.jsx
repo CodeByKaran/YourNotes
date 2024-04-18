@@ -28,14 +28,17 @@ export default function SignUp() {
     
     try {
       let {data} = await axios.post("/api/v1/users/signup",userCredentials)
+      console.log(data)
       setLogging(false)
       if(data.statusCode===200){
         navigate(`/verify/${data.data._id}`)
       }else{
         showAlert(data.response.data.message)
         setLogging(false)
+        console.log(data)
       }
     } catch (error) {
+      console.log(error)
       showAlert(error.response.data.message)
       setLogging(false)
     }
