@@ -27,7 +27,11 @@ export default function SignUp() {
     }
     
     try {
-      let {data} = await axios.post("/api/v1/users/signup",userCredentials)
+      let {data} = await axios.post("/api/v1/users/signup",userCredentials,{
+        headers:{
+          "Content-Type":"application/json"
+        },
+      })
       console.log(data)
       setLogging(false)
       if(data.statusCode===200){
