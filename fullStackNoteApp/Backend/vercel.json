@@ -8,7 +8,7 @@
      ],
      "rewrites":[
         {
-            "source":"/(.*)" , "destination":"/App.js"
+            "source":"/(.*)" , "destination":"./App.js"
         }
     ]
 }
